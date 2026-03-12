@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,10 @@
   <script defer src="./../../assets/js/doglog/doglog_write.js"></script>
   <title>멍! 로그 작성</title>
 </head>
+
 <body>
-  <header>header</header>
+  <!-- header -->
+  <div id="header-container"></div>
 
   <main class="doglog-write">
     <div class="container">
@@ -33,12 +36,8 @@
 
             <!-- 본문 입력 -->
             <div class="write-main-post">
-              <div
-                class="write-content-editor"
-                id="writeContentEditor"
-                contenteditable="true"
-                data-placeholder="내용을 입력해주세요"
-              ></div>
+              <div class="write-content-editor" id="writeContentEditor" contenteditable="true"
+                data-placeholder="내용을 입력해주세요"></div>
             </div>
           </div>
         </div>
@@ -46,13 +45,7 @@
 
       <div class="container-footer">
         <div class="footer-btn-wrap">
-          <input
-            type="file"
-            id="imageUpload"
-            accept="image/*"
-            multiple
-            hidden
-          />
+          <input type="file" id="imageUpload" accept="image/*" multiple hidden />
 
           <div class="footer-left">
             <label for="imageUpload" class="btn btn-upload">이미지 첨부</label>
@@ -66,7 +59,12 @@
       </div>
     </div>
   </main>
+  <!-- footer -->
+  <div id="footer-container"></div>
+  <!-- js -->
+  <script src="/assets/js/header-footer.js"></script>
 
-  <footer>footer</footer>
+
 </body>
+
 </html>

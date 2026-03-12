@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,11 @@
   <script defer src="./../../assets/js/doglog/doglog_detail.js"></script>
   <title>멍! 로그 상세</title>
 </head>
+
 <body>
-  <header>header</header>
+  <!-- header -->
+  <div id="header-container"></div>
+
 
   <main class="doglog-detail">
     <div class="container">
@@ -35,11 +39,7 @@
           <div class="comment-list" id="commentList"></div>
 
           <div class="comment-write-container" id="commentWriteContainer">
-            <textarea
-              class="comment-write-input"
-              id="commentWriteInput"
-              placeholder="댓글을 입력해주세요"
-            ></textarea>
+            <textarea class="comment-write-input" id="commentWriteInput" placeholder="댓글을 입력해주세요"></textarea>
             <button type="button" class="btn btn-comment-write" id="btnCommentWrite">
               댓글 작성
             </button>
@@ -61,7 +61,10 @@
       </div>
     </div>
   </main>
-
-  <footer>footer</footer>
+  <!-- footer -->
+  <div id="footer-container"></div>
+  <!-- js -->
+  <script src="/assets/js/header-footer.js"></script>
 </body>
+
 </html>

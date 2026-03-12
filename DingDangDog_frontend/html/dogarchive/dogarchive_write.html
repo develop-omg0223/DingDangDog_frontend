@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,11 @@
   <script defer src="./../../assets/js/dogarchive/dogarchive_write.js"></script>
   <title>멍! 카이브 작성</title>
 </head>
+
 <body>
-  <header>header</header>
+  <!-- header -->
+  <div id="header-container"></div>
+
 
   <main class="archive-write">
     <div class="container">
@@ -24,13 +28,7 @@
               <span class="img-placeholder">대표 이미지 첨부하기</span>
             </div>
 
-            <input
-              type="file"
-              id="imageUpload"
-              accept="image/*"
-              multiple
-              hidden
-            />
+            <input type="file" id="imageUpload" accept="image/*" multiple hidden />
 
             <label for="imageUpload" class="btn btn-upload">이미지 첨부</label>
           </div>
@@ -143,12 +141,8 @@
         </div>
 
         <div class="archive-content-section">
-          <div
-            id="archiveContentEditor"
-            class="archive-content-editor"
-            contenteditable="true"
-            data-placeholder="보호소가 자유롭게 작성 가능한 텍스트란"
-          ></div>
+          <div id="archiveContentEditor" class="archive-content-editor" contenteditable="true"
+            data-placeholder="보호소가 자유롭게 작성 가능한 텍스트란"></div>
         </div>
       </div>
 
@@ -160,7 +154,10 @@
       </div>
     </div>
   </main>
-
-  <footer>footer</footer>
+  <!-- footer -->
+  <div id="footer-container"></div>
+  <!-- js -->
+  <script src="/assets/js/header-footer.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,10 @@
   <link rel="stylesheet" href="./../../../assets/css/mypage/shelter/mypage_shelter.css" />
   <script defer src="./../../../assets/js/mypage/shelter/mypage_shelter.js"></script>
 </head>
+
 <body>
-  <header>header</header>
+  <!-- header -->
+  <div id="header-container"></div>
   <main class="mypage-shleter">
 
     <div class="container">
@@ -20,7 +23,7 @@
           <hr>
           <a class="btn-side-link" href="./archive_list.html">멍! 카이브 등록 정보</a>
           <hr>
-          <a class="btn-side-link" href="./support_list_shelter.html">1 : 1 문의</a >
+          <a class="btn-side-link" href="./support_list_shelter.html">1 : 1 문의</a>
         </nav>
       </aside>
 
@@ -33,9 +36,9 @@
               <h2 class="panel-title">최근 등록한 멍! 카이브</h2>
             </div>
             <div class="panel-body">
-                <ul class="archive-list" id="recentArchiveList"></ul>
-                    
-                </ul>
+              <ul class="archive-list" id="recentArchiveList"></ul>
+
+              </ul>
             </div>
           </article>
 
@@ -79,6 +82,11 @@
 
     </div>
   </main>
-  <footer>footer</footer>
+
+  <!-- footer -->
+  <div id="footer-container"></div>
+  <!-- js -->
+  <script src="/assets/js/header-footer.js"></script>
 </body>
+
 </html>
